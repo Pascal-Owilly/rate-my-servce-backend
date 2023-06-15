@@ -1,0 +1,18 @@
+{
+    "builds": [
+      {
+        "src": "enceptics/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python"}
+      }
+    ],
+    "routes": [
+      {
+         "src": "/(.*)", 
+         "dest": "enceptics/wsgi.py"
+     }
+      
+    ]
+
+  }
+  
