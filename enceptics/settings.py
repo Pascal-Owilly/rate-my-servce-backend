@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-=o-np1nsx&2dc-+)4u+x449_8j)8o!tsdhu5h(9^dc8&rp^a!^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost:3000' ]
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost:3000', 'localhost:5173' ]
 
 
 # Application definition
@@ -99,10 +99,11 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',  
     'https://127.0.0.1:3000', 
     'https://127.0.0.1',  
+    'http://localhost:5173',
 ]
 
 SIGNALS_MODULE = 'blog.signals'
-
+    
 AUTH_TOKEN_MODEL = 'blog.CustomToken'
 
 
